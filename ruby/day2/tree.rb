@@ -8,7 +8,7 @@ class Tree
 
   def visit_all(&block)
     visit &block
-    children.each {|c| c.visit_all &block}
+    children.each { |c| c.visit_all &block }
   end
 
   def visit(&block)
@@ -16,10 +16,10 @@ class Tree
   end
 end
 
-ruby_tree = Tree.new("Ruby", [Tree.new("Reia"), Tree.new("MacRuby")])
+ruby_tree = Tree.new('Ruby', [Tree.new('Reia'), Tree.new('MacRuby')])
 puts 'Visiting a node'
-ruby_tree.visit {|node| puts node.node_name}
+ruby_tree.visit { |node| puts node.node_name }
 puts
 
 puts 'Visiting entire tree'
-ruby_tree.visit_all {|node| puts node.node_name}
+ruby_tree.visit_all { |node| puts node.node_name }
