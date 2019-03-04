@@ -1,5 +1,5 @@
 Vehicle := Object clone
-Vehicle description := "Something to take you places\n"
-Vehicle description print
-Vehicle drive := method("driving!\n" print)
+Vehicle description := "Something to take you places"
+Vehicle description println
+Vehicle drive := method("driving!" println)
 Vehicle drive
